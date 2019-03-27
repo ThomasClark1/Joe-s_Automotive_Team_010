@@ -190,7 +190,7 @@
             this.Controls.Add(this.btnCustomersEdit);
             this.Controls.Add(this.label1);
             this.Name = "MainForm";
-            this.Text = "Joe\'s Automotive Customer Relationship Management";
+            this.Text = "Joe\'s Automotive CRM";
             this.ResumeLayout(false);
 
         }
