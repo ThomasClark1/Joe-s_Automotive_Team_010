@@ -16,5 +16,20 @@ namespace Final_Exam
         {
             InitializeComponent();
         }
+
+        private void customerBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.customerBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.databaseDataSet);
+
+        }
+
+        private void CustomerView_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'databaseDataSet.Customer' table. You can move, or remove it, as needed.
+            this.customerTableAdapter.Fill(this.databaseDataSet.Customer);
+
+        }
     }
 }

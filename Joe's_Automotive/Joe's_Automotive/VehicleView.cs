@@ -16,5 +16,20 @@ namespace Final_Exam
         {
             InitializeComponent();
         }
+
+        private void vehicleBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.vehicleBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.databaseDataSet);
+
+        }
+
+        private void VehicleView_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'databaseDataSet.Vehicle' table. You can move, or remove it, as needed.
+            this.vehicleTableAdapter.Fill(this.databaseDataSet.Vehicle);
+
+        }
     }
 }

@@ -16,5 +16,20 @@ namespace Final_Exam
         {
             InitializeComponent();
         }
+
+        private void partBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.partBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.databaseDataSet);
+
+        }
+
+        private void PartsEdit_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'databaseDataSet.Part' table. You can move, or remove it, as needed.
+            this.partTableAdapter.Fill(this.databaseDataSet.Part);
+
+        }
     }
 }
