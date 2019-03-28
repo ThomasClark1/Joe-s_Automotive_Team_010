@@ -41,6 +41,8 @@
             this.btnPartsEdit = new System.Windows.Forms.Button();
             this.btnPartsView = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.picLogo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -161,7 +163,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(83, 182);
+            this.btnExit.Location = new System.Drawing.Point(89, 183);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 12;
@@ -169,13 +171,23 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click_1);
             // 
+            // picLogo
+            // 
+            this.picLogo.Image = global::Final_Exam.Properties.Resources.Logo;
+            this.picLogo.Location = new System.Drawing.Point(12, 13);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(233, 164);
+            this.picLogo.TabIndex = 13;
+            this.picLogo.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(434, 217);
+            this.ClientSize = new System.Drawing.Size(434, 214);
             this.ControlBox = false;
+            this.Controls.Add(this.picLogo);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnPartsView);
             this.Controls.Add(this.btnPartsEdit);
@@ -191,6 +203,7 @@
             this.Controls.Add(this.label1);
             this.Name = "MainForm";
             this.Text = "Joe\'s Automotive CRM";
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -210,6 +223,7 @@
         private System.Windows.Forms.Button btnPartsEdit;
         private System.Windows.Forms.Button btnPartsView;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.PictureBox picLogo;
     }
 }
 

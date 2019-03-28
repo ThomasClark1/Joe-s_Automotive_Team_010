@@ -57,11 +57,13 @@
             this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.picVehicle = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vehicleBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vehicleBindingNavigator)).BeginInit();
             this.vehicleBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vehicleDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle)).BeginInit();
             this.SuspendLayout();
             // 
             // databaseDataSet
@@ -109,7 +111,7 @@
             this.vehicleBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.vehicleBindingNavigator.Name = "vehicleBindingNavigator";
             this.vehicleBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.vehicleBindingNavigator.Size = new System.Drawing.Size(1275, 25);
+            this.vehicleBindingNavigator.Size = new System.Drawing.Size(1497, 25);
             this.vehicleBindingNavigator.TabIndex = 0;
             this.vehicleBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -290,11 +292,20 @@
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
             this.dataGridViewTextBoxColumn12.ReadOnly = true;
             // 
+            // picVehicle
+            // 
+            this.picVehicle.Location = new System.Drawing.Point(1269, 28);
+            this.picVehicle.Name = "picVehicle";
+            this.picVehicle.Size = new System.Drawing.Size(216, 410);
+            this.picVehicle.TabIndex = 2;
+            this.picVehicle.TabStop = false;
+            // 
             // VehicleView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1275, 450);
+            this.ClientSize = new System.Drawing.Size(1497, 450);
+            this.Controls.Add(this.picVehicle);
             this.Controls.Add(this.vehicleDataGridView);
             this.Controls.Add(this.vehicleBindingNavigator);
             this.Name = "VehicleView";
@@ -306,6 +317,7 @@
             this.vehicleBindingNavigator.ResumeLayout(false);
             this.vehicleBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vehicleDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picVehicle)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -340,5 +352,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.PictureBox picVehicle;
     }
 }
