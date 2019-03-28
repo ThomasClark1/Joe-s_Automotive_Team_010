@@ -53,7 +53,8 @@
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblCustomers = new System.Windows.Forms.Label();
+            this.lblCustomerSearch = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customerBindingNavigator)).BeginInit();
@@ -256,21 +257,29 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // lblCustomers
+            // lblCustomerSearch
             // 
-            this.lblCustomers.AutoSize = true;
-            this.lblCustomers.Location = new System.Drawing.Point(12, 445);
-            this.lblCustomers.Name = "lblCustomers";
-            this.lblCustomers.Size = new System.Drawing.Size(35, 13);
-            this.lblCustomers.TabIndex = 3;
-            this.lblCustomers.Text = "label1";
+            this.lblCustomerSearch.AutoSize = true;
+            this.lblCustomerSearch.Location = new System.Drawing.Point(9, 448);
+            this.lblCustomerSearch.Name = "lblCustomerSearch";
+            this.lblCustomerSearch.Size = new System.Drawing.Size(47, 13);
+            this.lblCustomerSearch.TabIndex = 3;
+            this.lblCustomerSearch.Text = "Search: ";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(66, 445);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(692, 20);
+            this.textBox1.TabIndex = 4;
             // 
             // CustomerView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1083, 545);
-            this.Controls.Add(this.lblCustomers);
+            this.ClientSize = new System.Drawing.Size(1083, 508);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lblCustomerSearch);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.customerDataGridView);
             this.Controls.Add(this.customerBindingNavigator);
@@ -314,6 +323,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lblCustomers;
+        private System.Windows.Forms.Label lblCustomerSearch;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
