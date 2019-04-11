@@ -42,6 +42,8 @@
             this.lblPartsUsed = new System.Windows.Forms.Label();
             this.lblSubtotal = new System.Windows.Forms.Label();
             this.btnUpdateText = new System.Windows.Forms.Button();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.lblName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BtnCreateInvoice
@@ -79,7 +81,7 @@
             this.InvoicesLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.InvoicesLabel.Location = new System.Drawing.Point(427, 12);
             this.InvoicesLabel.Name = "InvoicesLabel";
-            this.InvoicesLabel.Size = new System.Drawing.Size(235, 196);
+            this.InvoicesLabel.Size = new System.Drawing.Size(235, 221);
             this.InvoicesLabel.TabIndex = 3;
             this.InvoicesLabel.Text = "Loading";
             // 
@@ -96,7 +98,7 @@
             // lblVehicleInfo
             // 
             this.lblVehicleInfo.AutoSize = true;
-            this.lblVehicleInfo.Location = new System.Drawing.Point(13, 73);
+            this.lblVehicleInfo.Location = new System.Drawing.Point(12, 76);
             this.lblVehicleInfo.Name = "lblVehicleInfo";
             this.lblVehicleInfo.Size = new System.Drawing.Size(66, 13);
             this.lblVehicleInfo.TabIndex = 5;
@@ -159,7 +161,7 @@
             // 
             // btnUpdateText
             // 
-            this.btnUpdateText.Location = new System.Drawing.Point(12, 178);
+            this.btnUpdateText.Location = new System.Drawing.Point(12, 203);
             this.btnUpdateText.Name = "btnUpdateText";
             this.btnUpdateText.Size = new System.Drawing.Size(409, 30);
             this.btnUpdateText.TabIndex = 13;
@@ -167,11 +169,29 @@
             this.btnUpdateText.UseVisualStyleBackColor = true;
             this.btnUpdateText.Click += new System.EventHandler(this.btnUpdateText_Click);
             // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(88, 177);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(334, 20);
+            this.txtName.TabIndex = 14;
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(13, 180);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(69, 13);
+            this.lblName.TabIndex = 15;
+            this.lblName.Text = "Name of File:";
+            // 
             // InvoicesEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(674, 221);
+            this.ClientSize = new System.Drawing.Size(674, 243);
+            this.Controls.Add(this.lblName);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.btnUpdateText);
             this.Controls.Add(this.lblSubtotal);
             this.Controls.Add(this.lblPartsUsed);
@@ -210,5 +230,7 @@
         private System.Windows.Forms.Label lblPartsUsed;
         private System.Windows.Forms.Label lblSubtotal;
         private System.Windows.Forms.Button btnUpdateText;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.Label lblName;
     }
 }
