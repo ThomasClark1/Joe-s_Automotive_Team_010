@@ -44,6 +44,8 @@
             this.btnUpdateText = new System.Windows.Forms.Button();
             this.txtName = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
+            this.txtCustomer = new System.Windows.Forms.TextBox();
+            this.lblCustomer = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BtnCreateInvoice
@@ -161,7 +163,7 @@
             // 
             // btnUpdateText
             // 
-            this.btnUpdateText.Location = new System.Drawing.Point(12, 203);
+            this.btnUpdateText.Location = new System.Drawing.Point(12, 249);
             this.btnUpdateText.Name = "btnUpdateText";
             this.btnUpdateText.Size = new System.Drawing.Size(409, 30);
             this.btnUpdateText.TabIndex = 13;
@@ -171,7 +173,7 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(88, 177);
+            this.txtName.Location = new System.Drawing.Point(88, 203);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(334, 20);
             this.txtName.TabIndex = 14;
@@ -179,17 +181,35 @@
             // lblName
             // 
             this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(13, 180);
+            this.lblName.Location = new System.Drawing.Point(12, 206);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(69, 13);
             this.lblName.TabIndex = 15;
             this.lblName.Text = "Name of File:";
             // 
+            // txtCustomer
+            // 
+            this.txtCustomer.Location = new System.Drawing.Point(116, 177);
+            this.txtCustomer.Name = "txtCustomer";
+            this.txtCustomer.Size = new System.Drawing.Size(306, 20);
+            this.txtCustomer.TabIndex = 16;
+            // 
+            // lblCustomer
+            // 
+            this.lblCustomer.AutoSize = true;
+            this.lblCustomer.Location = new System.Drawing.Point(12, 180);
+            this.lblCustomer.Name = "lblCustomer";
+            this.lblCustomer.Size = new System.Drawing.Size(97, 13);
+            this.lblCustomer.TabIndex = 17;
+            this.lblCustomer.Text = "Name of Customer:";
+            // 
             // InvoicesEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(674, 243);
+            this.ClientSize = new System.Drawing.Size(674, 291);
+            this.Controls.Add(this.lblCustomer);
+            this.Controls.Add(this.txtCustomer);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.btnUpdateText);
@@ -232,5 +252,7 @@
         private System.Windows.Forms.Button btnUpdateText;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.TextBox txtCustomer;
+        private System.Windows.Forms.Label lblCustomer;
     }
 }

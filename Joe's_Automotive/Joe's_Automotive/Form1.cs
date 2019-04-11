@@ -42,8 +42,8 @@ namespace Final_Exam
 
         private void btnInvoicesView_Click(object sender, EventArgs e)
         {
-            InvoicesView invoicesView = new InvoicesView();
-            invoicesView.Show();
+            InvoicesEdit invoicesEdit = new InvoicesEdit();
+            invoicesEdit.Show();
         }
 
         private void btnVehiclesEdit_Click(object sender, EventArgs e)

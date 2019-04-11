@@ -18,3 +18,23 @@ S:\Repos\Joe's Automotive Team 010\Joe-s_Automotive_Team_010\Joe's_Automotive\Jo
 S:\Repos\Joe's Automotive Team 010\Joe-s_Automotive_Team_010\Joe's_Automotive\Joe's_Automotive\obj\Debug\Joe's_Automotive.csproj.CoreCompileInputs.cache
 S:\Repos\Joe's Automotive Team 010\Joe-s_Automotive_Team_010\Joe's_Automotive\Joe's_Automotive\obj\Debug\Joe's_Automotive.exe
 S:\Repos\Joe's Automotive Team 010\Joe-s_Automotive_Team_010\Joe's_Automotive\Joe's_Automotive\obj\Debug\Joe's_Automotive.pdb
+K:\C#_Programs\School\Joe-s_Automotive_Team_010\Joe's_Automotive\Joe's_Automotive\bin\Debug\Database.mdf
+K:\C#_Programs\School\Joe-s_Automotive_Team_010\Joe's_Automotive\Joe's_Automotive\bin\Debug\Database_log.ldf
+K:\C#_Programs\School\Joe-s_Automotive_Team_010\Joe's_Automotive\Joe's_Automotive\bin\Debug\Joe's_Automotive.exe.config
+K:\C#_Programs\School\Joe-s_Automotive_Team_010\Joe's_Automotive\Joe's_Automotive\bin\Debug\Joe's_Automotive.exe
+K:\C#_Programs\School\Joe-s_Automotive_Team_010\Joe's_Automotive\Joe's_Automotive\bin\Debug\Joe's_Automotive.pdb
+K:\C#_Programs\School\Joe-s_Automotive_Team_010\Joe's_Automotive\Joe's_Automotive\obj\Debug\Joe's_Automotive.csprojAssemblyReference.cache
+K:\C#_Programs\School\Joe-s_Automotive_Team_010\Joe's_Automotive\Joe's_Automotive\obj\Debug\Final_Exam.CustomerEdit.resources
+K:\C#_Programs\School\Joe-s_Automotive_Team_010\Joe's_Automotive\Joe's_Automotive\obj\Debug\Final_Exam.CustomerView.resources
+K:\C#_Programs\School\Joe-s_Automotive_Team_010\Joe's_Automotive\Joe's_Automotive\obj\Debug\Final_Exam.MainForm.resources
+K:\C#_Programs\School\Joe-s_Automotive_Team_010\Joe's_Automotive\Joe's_Automotive\obj\Debug\Final_Exam.InvoicesEdit.resources
+K:\C#_Programs\School\Joe-s_Automotive_Team_010\Joe's_Automotive\Joe's_Automotive\obj\Debug\Final_Exam.InvoicesView.resources
+K:\C#_Programs\School\Joe-s_Automotive_Team_010\Joe's_Automotive\Joe's_Automotive\obj\Debug\Final_Exam.PartsEdit.resources
+K:\C#_Programs\School\Joe-s_Automotive_Team_010\Joe's_Automotive\Joe's_Automotive\obj\Debug\Final_Exam.PartsView.resources
+K:\C#_Programs\School\Joe-s_Automotive_Team_010\Joe's_Automotive\Joe's_Automotive\obj\Debug\Final_Exam.Properties.Resources.resources
+K:\C#_Programs\School\Joe-s_Automotive_Team_010\Joe's_Automotive\Joe's_Automotive\obj\Debug\Final_Exam.VehiclesEdit.resources
+K:\C#_Programs\School\Joe-s_Automotive_Team_010\Joe's_Automotive\Joe's_Automotive\obj\Debug\Final_Exam.VehicleView.resources
+K:\C#_Programs\School\Joe-s_Automotive_Team_010\Joe's_Automotive\Joe's_Automotive\obj\Debug\Joe's_Automotive.csproj.GenerateResource.cache
+K:\C#_Programs\School\Joe-s_Automotive_Team_010\Joe's_Automotive\Joe's_Automotive\obj\Debug\Joe's_Automotive.csproj.CoreCompileInputs.cache
+K:\C#_Programs\School\Joe-s_Automotive_Team_010\Joe's_Automotive\Joe's_Automotive\obj\Debug\Joe's_Automotive.exe
+K:\C#_Programs\School\Joe-s_Automotive_Team_010\Joe's_Automotive\Joe's_Automotive\obj\Debug\Joe's_Automotive.pdb
