@@ -20,6 +20,7 @@ namespace Final_Exam
 
         private void InvoicesEdit_Load(object sender, EventArgs e)
         {
+            // Writing the initial text of the label.
             InvoicesLabel.Text = "Please select a button. If you choose to create in invoice, update " +
                 "the text here using the text boxes and the 'Update Text' button before creating a new invoice for a preview. Use 'File Name' for both " +
                 "naming your invoice file and selecting the file name of the invoice you would like to open.";
@@ -29,19 +30,21 @@ namespace Final_Exam
         {
             try
             {
+                // Saving invoice information as variables for later use.
+
                 string fileName = txtName.Text + ".txt";
                 string vehicleInfo = txtVehicleInfo.Text;
                 string laborCosts = txtLaborCosts.Text;
                 string partsUsed = txtPartsUsed.Text;
                 string subtotalStr = txtSubtotal.Text;
                 string fluidCheckup;
-                if (!FluidCheckupCheckBox.Checked)
+                if (FluidCheckupCheckBox.Checked)
                 {
-                    fluidCheckup = "$0.00";
+                    fluidCheckup = "$24.99";
                 }
                 else
                 {
-                    fluidCheckup = "$24.99";
+                    fluidCheckup = "$0";
                 }
                 double subtotalNum = double.Parse(txtSubtotal.Text);
                 double taxNum = subtotalNum * 0.06;
@@ -49,6 +52,8 @@ namespace Final_Exam
                 string taxStr = taxNum.ToString();
                 string totalStr = totalNum.ToString();
                 string customer = txtCustomer.Text;
+
+                // Writing data to a file.
 
                 StreamWriter newFile = File.CreateText(fileName);
 
@@ -66,7 +71,7 @@ namespace Final_Exam
             }
             catch
             {
-                MessageBox.Show("Please use valid input.");
+                MessageBox.Show("Please use a valid file name. Invoice files are in Joe's_Automotive/bin/Debug. Do not include the filename extension.");
             }
             
         }
@@ -75,9 +80,13 @@ namespace Final_Exam
         {
             try
             {
+                // Reading data from an invoice saved as a text file.
+
                 string fileName = txtName.Text + ".txt";
                 string[] invoice = System.IO.File.ReadAllLines(fileName);
                 
+                // Writing info from the file into the label for reading.
+
                 InvoicesLabel.Text = "Joe's Automotive - Invoice" +
                     "\nCustomer Name: " + invoice[0] +
                     "\nVehicle Info: " + invoice[1] +
@@ -104,6 +113,8 @@ namespace Final_Exam
         {
             try
             {
+                // Saving invoice information as variables for later use.
+
                 string vehicleInfo = txtVehicleInfo.Text;
                 string laborCosts = txtLaborCosts.Text;
                 string partsUsed = txtPartsUsed.Text;
@@ -115,7 +126,7 @@ namespace Final_Exam
                 }
                 else
                 {
-                    fluidCheckup = "$0.00";
+                    fluidCheckup = "$0";
                 }
                 double subtotalNum = double.Parse(txtSubtotal.Text);
                 double taxNum = subtotalNum * 0.06;
@@ -123,6 +134,8 @@ namespace Final_Exam
                 string taxStr = taxNum.ToString();
                 string totalStr = totalNum.ToString();
                 string customer = txtCustomer.Text;
+
+                // Writing data from textboxes into the Label for reading.
 
                 InvoicesLabel.Text = "Joe's Automotive - Invoice" +
                     "\nCustomer Name: " + customer +
@@ -136,7 +149,7 @@ namespace Final_Exam
             }
             catch
             {
-                MessageBox.Show("Please use valid input.");
+                MessageBox.Show("Please use a valid file name. Invoice files are in Joe's_Automotive/bin/Debug. Do not include the filename extension.");
             }
         }
     }
